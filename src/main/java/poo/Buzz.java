@@ -5,6 +5,7 @@ import java.lang.Thread;
 
 public class Buzz {
 
+
     //atributos da classe
     private int capacete;
     private int botaoFrases;

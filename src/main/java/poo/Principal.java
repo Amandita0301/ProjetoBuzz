@@ -1,16 +1,35 @@
 package poo;
 
 import java.util.Scanner;
+import java.lang.String;
 
 public class Principal {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
+        int opcao = 0, soma = 0;
+        String nome;
 
         Buzz boneco = new Buzz();
-        int opcao = 0;
+//
+//        Buzz player[] = new Buzz[2];
+//
+//
+//        System.out.println("Começando a brincadeira:");
+//        System.out.println("Qual o seu nome jogador?:");
+//        nome = teclado.nextLine();
+//
+//        for(int i = 0; i < 3 ;i++){          //coloco os nomes no vetor
+//            if(player[i] != nome{
+//                 soma ++;
+//            }
+//            if(soma == 3) {
+//                player[i] = nome;
+//            }
+//        }
 
-        System.out.println("Vamos brincar?:");
+
+
 
         do{
             System.out.println("Digite:");
@@ -64,8 +83,8 @@ public class Principal {
                     break;
 
                 default:
-                    System.out.println("Opção não encontrada, digite uma das opções listadas: ");
                     break;
+
             }
 
         }while(opcao != 6);
