@@ -5,7 +5,6 @@ import java.lang.Thread;
 
 public class Buzz {
 
-
     //atributos da classe
     private int capacete;
     private int botaoFrases;
@@ -13,6 +12,8 @@ public class Buzz {
     private int botaoAsas;
     private int botaoBraco;
     int cont = 1;
+
+
 
     public int getBotaoAsas() { return botaoAsas; }
     public void setBotaoAsas(int botaoAsas) { this.botaoAsas = botaoAsas; }

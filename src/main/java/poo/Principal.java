@@ -7,29 +7,23 @@ public class Principal {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        int opcao = 0, soma = 0;
-        String nome;
+        int opcao = 0, nome;
 
         Buzz boneco = new Buzz();
-//
-//        Buzz player[] = new Buzz[2];
-//
-//
-//        System.out.println("Começando a brincadeira:");
-//        System.out.println("Qual o seu nome jogador?:");
-//        nome = teclado.nextLine();
-//
-//        for(int i = 0; i < 3 ;i++){          //coloco os nomes no vetor
-//            if(player[i] != nome{
-//                 soma ++;
-//            }
-//            if(soma == 3) {
-//                player[i] = nome;
-//            }
-//        }
+        Buzz boneco2 = new Buzz();
+        Buzz boneco3 = new Buzz();
 
 
+        System.out.println("Olá amiguinho:");
+        System.out.println("Quer brincar como o Buzz 1, 2 ou 3?:");
+        nome = teclado.nextInt();
 
+        if(nome == 2) {
+            boneco = boneco2;
+        }
+        if(nome == 3){
+            boneco = boneco3;
+        }
 
         do{
             System.out.println("Digite:");
@@ -38,7 +32,8 @@ public class Principal {
             System.out.println("3:Mexer no capacete:");
             System.out.println("4:Mexer os Braços:");
             System.out.println("5:Ler as Frases:");
-            System.out.println("6:Encerrar a Brincadeira:");
+            System.out.println("6:Trocar de Buzz:");
+            System.out.println("7:Encerrar a Brincadeira:");
             opcao = teclado.nextInt();
 
             switch (opcao)
@@ -82,12 +77,24 @@ public class Principal {
                     boneco.exibeFrases();
                     break;
 
+                case 6:
+                    System.out.println("Olá amiguinho:");
+                    System.out.println("Quer brincar como o Buzz 1, 2 ou 3?:");
+                    nome = teclado.nextInt();
+
+                    if(nome == 2) {
+                        boneco = boneco2;
+                    }
+                    if(nome == 3){
+                        boneco = boneco3;
+                    }
+
                 default:
                     break;
 
             }
 
-        }while(opcao != 6);
+        }while(opcao != 7);
 
         System.out.println("Acabou a brincadeira");
 
