@@ -7,7 +7,7 @@ public class Principal {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        int opcao = 0, nome;
+        int opcao = 0, nome, nom;
 
         Buzz boneco = new Buzz();
         Buzz boneco2 = new Buzz();
@@ -42,44 +42,39 @@ public class Principal {
                     System.out.println("Digite:");
                     System.out.println("1:Para acender o laser");
                     System.out.println("2:Para apagar o laser");
-                    boneco.setBotaoLaser(teclado.nextInt());
-                    boneco.alteraLaser();
+                    boneco.alteraLaser(teclado.nextInt());
                     break;
 
                 case 2:
                     System.out.println("Digite:");
                     System.out.println("1:Para abrir as asas");
                     System.out.println("2:Para fechar as asas");
-                    boneco.setBotaoAsas(teclado.nextInt());
-                    boneco.alteraAsas();
+                    boneco.alteraAsas(teclado.nextInt());
                     break;
 
                 case 3:
                     System.out.println("Digite:");
                     System.out.println("1:Para fechar o capacete");
                     System.out.println("2:Para abrir o capacete");
-                    boneco.setCapacete(teclado.nextInt());
-                    boneco.alteraCapacete();
+                    boneco.alteraCapacete( teclado.nextInt());
                     break;
 
                 case 4:
                     System.out.println("Digite:");
                     System.out.println("1:Para dobrar os braços:");
                     System.out.println("2:Para esticar os braços:");
-                    boneco.setBotaoBraco(teclado.nextInt());
-                    boneco.alteraBraco();
+                    boneco.alteraBraco(teclado.nextInt());
                     break;
 
                 case 5:
                     System.out.println("Digite:");
-                    System.out.println("1:Para ouvir uma frase:");
-                    boneco.setbotaoFrases(teclado.nextInt());
-                    boneco.exibeFrases();
+                    System.out.println("1:Para ler uma frase:");
+                    boneco.exibeFrases(teclado.nextInt());
                     break;
 
                 case 6:
                     System.out.println("Olá amiguinho:");
-                    System.out.println("Quer brincar como o Buzz 1, 2 ou 3?:");
+                    System.out.println("Quer brincar com o Buzz 1, 2 ou 3?:");
                     nome = teclado.nextInt();
 
                     if(nome == 2) {

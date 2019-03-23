@@ -14,26 +14,10 @@ public class Buzz {
     int cont = 1;
 
 
-
-    public int getBotaoAsas() { return botaoAsas; }
-    public void setBotaoAsas(int botaoAsas) { this.botaoAsas = botaoAsas; }
-
-    public int getBotaoBraco() { return botaoBraco; }
-    public void setBotaoBraco(int botaoBraco) { this.botaoBraco = botaoBraco; }
-
-    public int getCapacete() { return capacete; }
-    public void setCapacete(int capacete) { this.capacete = capacete; }
-
-    public int getbotaoFrases() { return botaoFrases; }
-    public void setbotaoFrases(int botaoFrases) { this.botaoFrases = botaoFrases; }
-
-    public int getBotaoLaser() { return botaoLaser; }
-    public void setBotaoLaser(int botaoLaser) { this.botaoLaser = botaoLaser; }
-
-
     //metodos
 
-    public void alteraCapacete() {
+    public void alteraCapacete(int Capacete) {
+        this.capacete = Capacete;
 
         if(capacete == 1) {
             System.out.println("Capacete fechado: ");
@@ -50,7 +34,8 @@ public class Buzz {
         }
     }
 
-    public void alteraLaser(){
+    public void alteraLaser(int Laser){
+        this.botaoLaser = Laser;
 
         if(botaoLaser == 1) {
             System.out.println("Laser acionado: ");
@@ -77,7 +62,8 @@ public class Buzz {
         }
     }
 
-    public void alteraAsas() {
+    public void alteraAsas(int Asas) {
+        this.botaoAsas = Asas;
 
         if(botaoAsas ==1) {
             System.out.println("Asas abertas: ");
@@ -103,7 +89,9 @@ public class Buzz {
     }
 
 
-    public void alteraBraco(){
+    public void alteraBraco(int Braco){
+        this.botaoBraco = Braco;
+
         if(botaoBraco == 1) {
             System.out.println("Dobrar o braço: ");
             System.out.println();
@@ -126,7 +114,8 @@ public class Buzz {
         }
     }
 
-    public void exibeFrases(){
+    public void exibeFrases(int Frases){
+        this.botaoFrases = Frases;
 
         if(botaoFrases == 1){
         if(cont == 7){
